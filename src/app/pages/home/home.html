@@ -1,0 +1,11 @@
+<app-navbar-component></app-navbar-component>
+
+<div class="flex justify-center items-center">
+  <div class="grid grid-cols-4 gap-4">
+    <app-card-component
+      *ngFor="let card of cards"
+      [cardTitle]="card.title"
+      (goToPage)="goToPage(card.title)"
+    ></app-card-component>
+  </div>
+</div>

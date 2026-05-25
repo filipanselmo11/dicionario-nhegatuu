@@ -1,0 +1,67 @@
+{
+    "a": [
+        {
+            "id": 1,
+            "portugues": "À Toa",
+            "nheengatu": "Tenhuntu"
+        },
+        {
+            "id": 2,
+            "portugues": "Abacaxi",
+            "nheengatu": "Naná"
+        },
+        {
+            "id": 3,
+            "portugues": "Abaixo",
+            "nheengatu": "Iwirpe"
+        },
+        {
+            "id": 4,
+            "portugues": "Abano",
+            "nheengatu": "Tapekúa"
+        },
+        {
+            "id": 5,
+            "portugues": "Abelha",
+            "nheengatu": "Ira Manha"
+        },
+        {
+            "id": 6,
+            "portugues": "Abiu",
+            "nheengatu": "Abiyú"
+        },
+        {
+            "id": 7,
+            "portugues": "Aborrecer",
+            "nheengatu": "-Kweré-"
+        },
+        {
+            "id": 8,
+            "portugues": "Abraçar",
+            "nheengatu": "-Yumana"
+        },
+        {
+            "id": 9,
+            "portugues": "Abrir",
+            "nheengatu": "-Pirari"
+        },
+        {
+            "id": 10,
+            "portugues": "Acabar",
+            "nheengatu": "-Pawa; -Mbawa"
+        },
+        {
+            "id": 11,
+            "portugues": "Açaí",
+            "nheengatu": "Wasaí"
+        },
+        {
+            "id": 12,
+            "portugues": "Acertar",
+            "nheengatu": "-Pawa"
+        }
+        
+
+    ],
+    "e": []
+}

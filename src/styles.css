@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "@tailwindcss/typography";
+
+/* Cor de fundo global da aplicação */
+:root {
+	--app-bg: #f3f4f6; /* alterar este valor para mudar o fundo */
+}
+
+body {
+	background-color: var(--app-bg);
+	min-height: 100vh;
+}
