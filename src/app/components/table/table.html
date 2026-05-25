@@ -1,4 +1,4 @@
-<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
+<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 w-90">
     <table class="table border-spacing-2">
         <thead>
             <tr>
@@ -8,11 +8,29 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let item of data; let i = index">
-                <th>{{ i + 1 }}</th>
+            <tr *ngFor="let item of pagedData; let i = index">
+                <th>{{ (currentPage - 1) * pageSize + i + 1 }}</th>
                 <td>{{ item.portugues }}</td>
                 <td>{{ item.nheengatu }}</td>
             </tr>
+            <tr *ngIf="pagedData.length === 0">
+                <td colspan="3" class="text-center">Nenhum registro encontrado</td>
+            </tr>
         </tbody>
     </table>
+
+    <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <span class="text-sm text-base-content/70">Página {{ currentPage }} de {{ totalPages }}</span>
+        <div class="btn-group">
+            <button class="btn btn-sm" type="button" (click)="prevPage()"
+                [disabled]="currentPage === 1">Anterior</button>
+            <button class="btn btn-sm" type="button" *ngFor="let page of pages()"
+                [ngClass]="{ 'btn-active': currentPage === page }" (click)="selectPage(page)">
+                {{ page }}
+            </button>
+            <button class="btn btn-sm" type="button" (click)="nextPage()"
+                [disabled]="currentPage === totalPages">Próxima</button>
+        </div>
+    </div>
+
 </div>
