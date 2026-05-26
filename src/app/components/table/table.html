@@ -1,4 +1,4 @@
-<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 w-90">
+<div class="overflow-x-auto rounded-box border border-base-content/5 bg-green-600 w-90">
     <table class="table border-spacing-2">
         <thead>
             <tr>
@@ -19,9 +19,9 @@
         </tbody>
     </table>
 
-    <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <span class="text-sm text-base-content/70">Página {{ currentPage }} de {{ totalPages }}</span>
-        <div class="btn-group">
+    <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between -mt-[1rem]">
+        <span class="text-sm text-base-content/70 text-yellow-300">Página {{ currentPage }} de {{ totalPages }}</span>
+        <div class="btn-group bg-cyan-600">
             <button class="btn btn-sm" type="button" (click)="prevPage()"
                 [disabled]="currentPage === 1">Anterior</button>
             <button class="btn btn-sm" type="button" *ngFor="let page of pages()"

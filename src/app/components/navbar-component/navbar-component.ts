@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -9,4 +10,11 @@ import { Component, Input } from '@angular/core';
 })
 export class NavbarComponent {
   @Input() page?: string;
+
+  constructor(private router: Router) {}
+
+
+  navigateToHome(): void {
+    this.router.navigate(['/home']);
+  }
 }
